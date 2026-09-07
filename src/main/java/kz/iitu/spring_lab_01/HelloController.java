@@ -23,7 +23,7 @@ public class HelloController {
                 LocalDateTime.now()
         );
     }
-
+    // Lab 01 endpoint for application information
     @GetMapping("/info")
     public Info info() {
         return new Info(
