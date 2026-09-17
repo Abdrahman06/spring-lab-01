@@ -23,7 +23,7 @@ public class HelloController {
                 LocalDateTime.now()
         );
     }
-    // Lab 01 endpoint for application information
+
     @GetMapping("/info")
     public Info info() {
         return new Info(
@@ -32,6 +32,20 @@ public class HelloController {
                 Runtime.getRuntime().availableProcessors()
         );
     }
+
+    @GetMapping("/temperature")
+    public Temperature temperature(@RequestParam double f) {
+        double celsius = (f - 32) * 5 / 9;
+        double kelvin = celsius + 273.15;
+
+        return new Temperature(f, celsius, kelvin);
+    }
+
+    public record Temperature(
+            double fahrenheit,
+            double celsius,
+            double kelvin
+    ) {}
 
     public record Greeting(
             String message,
