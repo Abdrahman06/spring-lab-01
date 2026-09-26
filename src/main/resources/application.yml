@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: spring-lab-01
+
+server:
+  port: 8080
+
+app:
+  owner: Dinasil Abdrahman
+  group: IS-2410
+  mail:
+    from: no-reply@iitu.kz
+    retry-count: 3
+    timeout: 5s
+    enabled: true
+  rate-limit:
+    requests-per-minute: 60
+    burst: 10
+
+logging:
+  level:
+    kz.iitu: INFO
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,env,configprops,conditions
