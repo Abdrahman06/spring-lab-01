@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Order(3)
 public class TimingAspect {
 
-    @Around("execution(* kz.iitu.spring_lab_01.service..*(..))")
+    @Around("Pointcuts.serviceOperation()")
     public Object measureTime(ProceedingJoinPoint joinPoint) throws Throwable {
         long start = System.currentTimeMillis();
 
