@@ -17,7 +17,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>spring-lab-01</name>
-	<description>Spring Lab 04 - Spring AOP</description>
+	<description>Spring Lab 05 - Spring MVC</description>
 
 	<properties>
 		<java.version>25</java.version>
@@ -35,6 +35,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc</artifactId>
+		</dependency>
+
+		<!-- Thymeleaf -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
 		<!-- DevTools -->
