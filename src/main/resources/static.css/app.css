@@ -1,0 +1,81 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #f1f4fa;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+h1 { margin: 0; color: #1a3d7c; }
+h2 { margin: 0 0 12px; font-size: 1.1rem; color: #1a3d7c; }
+
+.back { color: #1a3d7c; text-decoration: none; font-weight: 600; }
+.back:hover { text-decoration: underline; }
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* table */
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e3e8f2; }
+th { background: #1a3d7c; color: #fff; }
+th:first-child { border-top-left-radius: 6px; }
+th:last-child { border-top-right-radius: 6px; }
+tr:nth-child(even) td { background: #f6f8fd; }
+tr:hover td { background: #e8eefb; }
+
+.empty { color: #6b7280; text-align: center; margin: 16px 0 0; }
+
+/* forms */
+.row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+input {
+    flex: 1 1 140px;
+    padding: 9px 12px;
+    border: 1px solid #c9d1e0;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+input:focus { outline: 2px solid #8fb0ee; border-color: #1a3d7c; }
+
+button, .btn-secondary {
+    padding: 9px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+button { background: #1a3d7c; color: #fff; }
+button:hover { background: #14306a; }
+.btn-secondary { background: #e3e8f2; color: #1f2937; display: inline-flex; align-items: center; }
+.btn-secondary:hover { background: #d3dbec; }
+
+/* flash message */
+.flash {
+    padding: 10px 14px;
+    background: #e3f6e5;
+    border: 1px solid #7bc47f;
+    border-radius: 6px;
+    color: #1b5e20;
+    margin-bottom: 16px;
+}
